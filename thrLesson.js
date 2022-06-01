@@ -31,9 +31,7 @@ let c = {
   sex: "man",
 };
 
-if ("age" in a) {
-  console.log("Yuhuuuuuuuuuuuuuuuuuuuuuuuuu!!!");
-}
+
 
 let persons = {
   a: a,
@@ -51,18 +49,42 @@ for (var i in persons) {
 
 let ab = document.querySelector("#a");
 
-let bb = document.querySelector("#a");
+let bb = document.querySelector("#b");
 
-let cb = document.querySelector("#a");
+let cb = document.querySelector("#c");
 
 let for_html = [];
 
+for(let key in persons){
+  for(let i in persons[key]){
+    for_html.push(persons[key][i]);
+  }
+}
+
+for(i = 0; i <=9; i += 3){
+  console.log(for_html[i])
+};
+
+for(i = 1; i <=9; i += 3){
+  console.log(for_html[i])
+};
+
+for(i = 2; i <=9; i += 3){
+  console.log(for_html[i])
+};
+
+
+
+
+
+
+/*
 for (var key in persons) {
   var t = 1;
   for (var i in persons[key]) {
     console.log(persons[key][i]);
     if (t == 1 || t == 4 || t == 7) {
-      ab.innerHTML += `<th>${persons[key][i]}</th>`;
+      
     }
 
     if (t == 2 || t == 5 || t == 6) {
@@ -71,10 +93,14 @@ for (var key in persons) {
 
     if (t == 3 || t == 5 || t == 8) {
       cb.innerHTML += `<td>${persons[key][i]}</td>`;
-    }
+
   }
   vart += 1;
 }
+*/
+
+
+
 
 //fullName
 /*

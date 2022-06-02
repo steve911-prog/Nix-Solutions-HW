@@ -262,4 +262,26 @@ console.log(a, b, l);
 
 //Dark Belt
 
-let;
+let input = prompt("Please type 1 or 2");
+let l = [];
+
+let li = [];
+
+for (i = 1; i < 9; i++) {
+  input = prompt("Please type 1 or 2");
+
+  if ((l.length = 4)) {
+    console.log(l in li);
+
+    let a = l in li;
+
+    alert(li[a][i]);
+
+    li.push(l);
+    l.length = 0;
+  }
+
+  l.push(input);
+
+  alert(l);
+}

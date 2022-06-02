@@ -262,26 +262,45 @@ console.log(a, b, l);
 
 //Dark Belt
 
-let input = prompt("Please type 1 or 2");
+let input = prompt("Please type 1 or 0");
 let l = [];
 
 let li = [];
 
 for (i = 1; i < 9; i++) {
-  input = prompt("Please type 1 or 2");
+  input = prompt("Please type 0 or 1");
 
   if ((l.length = 4)) {
+    alert.log(l in li);
+
+    let a = l in li;
+    if(a){
+      alert(a[a[l.indexOf()+1][0]]);
+      li.push(l);
+      input.push(l)
+    }
+
+    else{
+      alert(Math.random());
+      li.push(l);
+      input.push(l)
+    }
+  }
+
+  
+
+ /* if ((l.length = 4)) {
     console.log(l in li);
 
     let a = l in li;
-
+    l.push(input);
     alert(li[a][i]);
 
     li.push(l);
     l.length = 0;
   }
 
-  l.push(input);
+  
 
-  alert(l);
+  alert(l);*/
 }

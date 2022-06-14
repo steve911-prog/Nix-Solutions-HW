@@ -260,47 +260,81 @@ let [a, b, l] = [c[0], c[1], c.length];
 console.log(a, b, l);
 */
 
-//Dark Belt
 
+
+
+//Dark Belt
+/*
 let input = prompt("Please type 1 or 0");
 let l = [];
-
 let li = [];
+let ind = li.findIndex(i => i === l);
+let rand = Math.round(Math.random());
 
-for (i = 1; i < 9; i++) {
-  input = prompt("Please type 0 or 1");
 
-  if ((l.length = 4)) {
-    alert.log(l in li);
+for(i = 0; i < 9; i++){
+  input  =  prompt("Please type 1 or 0");
+  if(l.length === 4){
+    ind = li.findIndex(i => i === l);
+    if(ind != -1){
 
-    let a = l in li;
-    if(a){
-      alert(a[a[l.indexOf()+1][0]]);
-      li.push(l);
-      input.push(l)
+      console.log("Computer:");
+      console.log(li[ind + 1][0]);
+      console.log(" ");
+      console.log("User:");
+      console.log(input);
+      console.log("///////////");
+      console.log("///////////");
+
+
     }
 
-    else{
-      alert(Math.random());
-      li.push(l);
-      input.push(l)
-    }
-  }
+  else{
+    rand = Math.round(Math.random());
 
-  
+    console.log("Computer:");
+    console.log(rand);
+    console.log(" ");
+    console.log("User:");
+    console.log(input);
+    console.log("///////////");
+    console.log("///////////");
+  } 
 
- /* if ((l.length = 4)) {
-    console.log(l in li);
-
-    let a = l in li;
-    l.push(input);
-    alert(li[a][i]);
 
     li.push(l);
-    l.length = 0;
+    l = [];
   }
 
-  
+  else{
+    rand = Math.round(Math.random());
 
-  alert(l);*/
+    console.log("Computer:");
+    console.log(rand);
+    console.log(" ");
+    console.log("User:");
+    console.log(input);
+    console.log("///////////");
+    console.log("///////////");
+  } 
+
+
+  l.push(input);
 }
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+ 

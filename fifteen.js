@@ -36,7 +36,7 @@ document.addEventListener("mousemove", (eventor)=>{
 
 
 //Calc live
-
+/*
 let body = document.querySelector("body");
 
 let table = document.createElement("table");
@@ -60,7 +60,7 @@ let btns = [["C","<","/","x^2"],["7","8","9","x"],
 }
 
 body.appendChild(table);
-*/
+
 
 
 
@@ -73,7 +73,7 @@ for(i in btns){
     }
 }
 
-
+*/
 
 
 

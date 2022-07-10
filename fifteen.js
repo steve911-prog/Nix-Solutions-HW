@@ -1,27 +1,52 @@
 //Table -> tr -> th(Headlines) or td(RegularBox)
 //Multiply Table
-/*let table = document.createElement("table");
+/*
+
 let box = null;
 let row = null;
 
-let create_tml  = () => {
+let createNumArr  = () => {
     let list = [];
     let num = ["one", "two", "three", "four", "five", "six", "seven", "eight",
 "nine", "ten"];
     for(i = 1; i != 10; i++){
         list.push([i]);
         //console.log(Array.isArray(list[i]));
-        console.log(list[i]);
-        
-        for
-        
-        
+        //console.log(list[i-1]);
+        for(j = 1;j != 10;j++){
+            list[i-1].push(j * list[i-1][0]);
+        }
     }
     console.log(list);
-    console.log(list[1])
 };
 
-create_tml();
+let numList = createNumArr();
+
+let addNum = (arr) => {
+    let body = document.querySelector("body");
+    let table = document.createElement("table");
+    console.log(typeof body);
+    body.appendChild(table);
+    //let table = document.querySelector("table");
+    let box = null;
+    let row = null;
+    //
+    tr = document.createElement("tr");
+    td = document.createElement("td");
+
+    for(i in arr){
+        //tr.setAttribute("id","1")
+        table.appendChild(tr);
+        tr.appendChild(td);
+        //
+        td.textContent = `${i}`;
+    }
+};
+
+addNum(numList);
+
+
+
 */
 
 

@@ -7,8 +7,7 @@ let row = null;
 
 let createNumArr  = () => {
     let list = [];
-    let num = ["one", "two", "three", "four", "five", "six", "seven", "eight",
-"nine", "ten"];
+    
     for(i = 1; i != 10; i++){
         list.push([i]);
         //console.log(Array.isArray(list[i]));
@@ -17,45 +16,51 @@ let createNumArr  = () => {
             list[i-1].push(j * list[i-1][0]);
         }
     }
-    console.log(list);
+    //console.log(list);
+    return list;
 };
 
 let numList = createNumArr();
+//console.log(numList[0][0]);
+
 
 let addNum = (arr) => {
     let body = document.querySelector("body");
     let table = document.createElement("table");
-    console.log(typeof body);
+    let num = ["one", "two", "three", "four", "five", "six", "seven", "eight",
+"nine"];
+    //console.log(typeof body);
     body.appendChild(table);
-    //let table = document.querySelector("table");
-    let box = null;
-    let row = null;
+    let tbl = document.querySelector("table");
     //
-    tr = document.createElement("tr");
-    td = document.createElement("td");
-
-    for(i in arr){
-        //tr.setAttribute("id","1")
-        table.appendChild(tr);
-        tr.appendChild(td);
-        //
-        td.textContent = `${i}`;
+    let id = 0;
+    for(i in numList){
+        tbl.insertAdjacentHTML("beforeend",`<tr id = "${num[i]}"></tr>`);
+        for(j in numList[i]){
+            id = document.querySelector(`#${num[i]}`);
+            id.insertAdjacentHTML("beforeend",`<td>${numList[i][j]}</td>`)
+        }
+    //console.log(i);
     }
+   
+    
 };
-
+console.log(numList);
 addNum(numList);
-
-
-
 */
 
 
+
+
+
 //Color box and column
-/*let attr = 0;
+/*
+let attr = 0;
 
 document.addEventListener("mousemove", (eventor)=>{
     
     document.querySelector("table").style.color = "red";
+    document.querySelectorAll("td").style.border = "15px"
 });
 */
 
@@ -64,41 +69,64 @@ document.addEventListener("mousemove", (eventor)=>{
 /*
 let body = document.querySelector("body");
 
-let table = document.createElement("table");
-console.log(body);
-document.body.appendChild(table);
+body.insertAdjacentHTML("beforeend", `<input type = "number" id = "one">`);
+body.insertAdjacentHTML("beforeend", `<input type = "number" id = "two">
+<br></br>`);
+let oneValue = document.querySelector("#one").value;
+let twoValue = document.querySelector("#two").value; 
+let calc = () => {
+    oneValue = document.querySelector("#one").value || 0;
+    twoValue = document.querySelector("#two").value || 0; 
+    console.log(oneValue * 1 + twoValue * 1);
+}
 
-let tr = document.createElement("tr");
-let td = document.createElement("td");
+body.insertAdjacentHTML("beforeend", `<button type = "button" id = "btn"
+onclick = "calc()">calc</button>`);
+
+let one = document.querySelector("#one");
+let two = document.querySelector("#two");
+
+one.addEventListener("click", ()=>{
+    calc();
+    console.log("event1");
+});
+
+two.addEventListener("click", ()=>{
+    calc();
+    console.log("event2");
+});
+
+*/
+
+/*
+let table = document.createElement("table");
+body.appendChild(table);
+table = document.querySelector("table");
+
+
+
 
 
 let btns = [["C","<","/","x^2"],["7","8","9","x"],
 ["4","5","6","-"],["1","2","3","+"],["+/-","0",".","="]];
+let num = ["one","two","three","four","five"];
+
+let tr = 0;
+*/
 
 /*for(i in btns){
-    table.appendChild(tr);
+    table.insertAdjacentHTML("beforeend",`<tr id = "${num[i]}"></tr>`);
+    tr = document.querySelector(`#${num[i]}`);
     for(j in btns[i]){
-        tr.appendChild(td)
-        td.textContent = `${btns[i][j]}`;
+        tr.insertAdjacentHTML("beforeend",`<button type = "button">
+        ${btns[i][j]}</button>`)
     }
     
 }
 
-body.appendChild(table);
+table.insertAdjacentHTML("afterbegin",`<input type = "text">`);
 
-
-
-
-
-for(i in btns){
-    table.appendChild(tr);
-
-    for(j in btns[i]){
-        tr.appendChild(td);
-    }
-}
-
+//body.appendChild(table);
 */
-
 
 

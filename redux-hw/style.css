@@ -1,20 +1,23 @@
-#goods{
-    margin:0 0 0 150px;
-    border:1px solid black;
-    margin:auto;
+#goods {
+  margin: 0 0 0 152px;
+  border: 1px solid black;
+  margin: auto;
 }
-h1,h2{
-     text-align: center;
-}
-
-th{
-    padding: 10px 20px 10px 20px;
+h1,
+h2 {
+  text-align: center;
 }
 
-.buy{
-    padding-top:5px;
+th {
+  padding: 10px 20px 10px 20px;
 }
 
-#cokePrice,#fantaPrice,#waterPrice{
-    font-size:22px;
+.buy {
+  padding-top: 5px;
+}
+
+#cokePrice,
+#fantaPrice,
+#waterPrice {
+  font-size: 22px;
 }

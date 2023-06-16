@@ -1,28 +1,40 @@
+// Conditional statements
+
 // let answ = confirm("budesh keksik?");
 // console.log(answ);
 
 // switch (answ) {
 //   case true:
-//     console.log("ok");
+//     console.log("ok");let color = prompt("Enter the color", "color");
+
+// if (color === "red") {
+//   document.write("<div style='background-color: red;'>red</div>");
+// } else if (color === "green") {
+//   document.write("<div style='background-color: green;'>green</div>");
+// } else if (color === "blue") {
+//   document.write("<div style='background-color: blue;'>blue</div>");
+// } else if (color === "cyan") {
+//   document.write("<div style='background-color: cyan;'>cyan</div>");
+// }
 // }
 
-// +
 
-//Switch if
+
+// Switch if
 
 // let color = prompt("Enter the color", "color");
 
 // if (color === "red") {
-//   document.write("<div style='background-color: red;'>красный</div>");
+//   document.write("<div style='background-color: red;'>red</div>");
 // } else if (color === "green") {
-//   document.write("<div style='background-color: green;'>красный</div>");
+//   document.write("<div style='background-color: green;'>green</div>");
 // } else if (color === "blue") {
-//   document.write("<div style='background-color: blue;'>красный</div>");
+//   document.write("<div style='background-color: blue;'>blue</div>");
 // } else if (color === "cyan") {
-//   document.write("<div style='background-color: cyan;'>красный</div>");
+//   document.write("<div style='background-color: cyan;'>cyan</div>");
 // }
 
-//+
+
 
 //prompt: or
 

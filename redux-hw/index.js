@@ -1,28 +1,58 @@
-//ids,classes
-let cokeNumber = document.getElementById("cokeNumber").textContent;
-let fantaNumber = document.getElementById("cokeNumber").textContent;
-let waterNumber = document.getElementById("cokeNumber").textContent;
+console.log("I work!")
 
-let cokePrice = document.getElementById("cokePrice").textContent;
-let fantaPrice = document.getElementById("fantaPrice").textContent;
-let waterPrice = document.getElementById("waterPrice").textContent;
+let budget = 199;                                                                     //Client's money
+let yours = document.getElementById("yourMoney");
+renewBucks = () => {
+  document.getElementById("yourMoney").textContent = `Your bucks: ${budget}$`;
+};
 
-let buyCoke = document.getElementById("buyCoke");
-let buyFanta = document.getElementById("buyFanta");
-let buyWater = document.getElementById("buyWater");
+renewBucks()
 
-let money = document.getElementById("money");
 
-function buy(itemPrice, usrMny){
-    let price = itemPrice.substring(0,2);
-    console.log(itemPrice)
-    console.log(price);
-    let mn = usrMny.textContent.substring(6,9);
-    console.log(usrMny.textContent)
-    console.log(mn)
-    let result = mn - price;
-    console.log(result);
-    usrMny.textContent = `Money: ${result}$`;
-    
+// Drinks' prices
+prices = {
+  coke: 12,
+  fanta: 19,
+  sprite: 20,
+};
+
+renewDrink = (drink, id) => {
+  document.getElementsByClassName(`${id}`).textContent = `${prices[drink]}$`;
+  console.log("renwDrink!")
+};
+
+let cokePrice = document.getElementsByClassName("cokePrice").textContent;
+let fantaPrice = document.getElementsByClassName("fantaPrice").textContent;
+let waterPrice = document.getElementsByClassName("waterPrice").textContent;
+
+renewDrink("coke", "cokePrice");
+renewDrink("fanta", "fantaPrice");
+renewDrink("water", "waterPrice");
+
+let buyCoke = document.getElementsByClassName("buyCoke");
+let buyFanta = document.getElementsByClassName("buyFanta");
+let buyWater = document.getElementsByClassName("buyWater");
+
+function request(drink) {
+  if (budget <= 0) {
+    console.log("you have no money...");
+    document.getElementById("yourMoney").textContent = "Sorry, no money..."
+    return;
+  }
+
+  console.log("function is done!")
+  budget = budget - prices[`${drink}`];
+  console.log(budget);
+  renewBucks();
+
 }
+
+// buyCoke.onclick = request("coke");
+// buyFanta.onclick = request("coke");
+// buyWater.onclick = request("coke");
+
+// buyCoke.addEventListener("click", request("coke"));
+// buyFanta.addEventListener("click", request("fanta"));
+// buyWater.addEventListener("click", request("water"));
+
 

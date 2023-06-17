@@ -9,7 +9,8 @@
 
     <script src="index.js" defer></script>
    
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style_nav.css"/>
+     <link rel="stylesheet" href="style_buy.css"/>
 </head>
 <body>
 
@@ -27,30 +28,53 @@
         <li class="link"><a href="" >Gallery</a></li>
         <li class="link"><a href="">Explore</a></li>
         <li class="link"><a href="" >Contact</a></li>
-        <li class="link"><a href="" id="yourMoney">$</a></li>
+    
       </ul>
 
-      <a href="" id = "sign_up">Sign up</a>
+      <a href="" id = "sign_up"><div id="yourMoney"></div></a>
     </div>
     
     <div class="store">
         <div class="item">
-            <div class="img"><img src="img/coke.jpg" width="200" height="167"></div>
+            <div class="img"><img src="img/coke.jpg"></div>
             <div class="cokePrice"></div>
             <div class="btn"><input type="button" value = "BUY" class = "buy" id = "buyCoke"  onclick="request('coke')"></div>
         </div>
 
         <div class="item">
-            <div class="img"><img src="img/fanta.jpg" width="200" height="167"></div>
+            <div class="img"><img src="img/fanta.jpg"></div>
             <div class="fantaPrice"></div>
             <div class="btn"><input type="button" value = "BUY" class = "buy" id = "buyFanta" onclick="request('fanta')"></div>
         </div>
 
         <div class="item">
-            <div class="img"><img src="img/sprite.jfif" width="220" height="167"></div>
+            <div class="img"><img src="img/sprite.jfif"></div>
             <div class="waterPrice"><h3 class="waterPrice"></h3></div>
             <div class="btn"><input type="button" value = "BUY" class = "buy" id = "buyWater" onclick="request('sprite')"></div>
         </div>
+
+
+        <div class="item">
+            <div class="img"><img src="img/coke.jpg"></div>
+            <div class="cokePrice"></div>
+            <div class="btn"><input type="button" value = "BUY" class = "buy" id = "buyCoke"  onclick="request('coke')"></div>
+        </div>
+
+        <div class="item">
+            <div class="img"><img src="img/fanta.jpg"></div>
+            <div class="fantaPrice"></div>
+            <div class="btn"><input type="button" value = "BUY" class = "buy" id = "buyFanta" onclick="request('fanta')"></div>
+        </div>
+
+        <div class="item">
+            <div class="img"><img src="img/sprite.jfif"></div>
+            <div class="waterPrice"><h3 class="waterPrice"></h3></div>
+            <div class="btn"><input type="button" value = "BUY" class = "buy" id = "buyWater" onclick="request('sprite')"></div>
+        </div>
+
+    </div>
+
+        
 
          <!-- <div class="item">
             <div class="img"><img src="img/water.jpg"></div>

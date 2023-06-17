@@ -113,17 +113,40 @@ video {
   justify-content: space-between;
 }
 
-.item {
-  margin: 1%;
-  border-radius: 7%;
-  border: 2px solid;
-  padding: 2% 0;
-  justify-content: center;
+
+/* S */
+/* T */
+/* O */
+/* R */
+/* E */
+
+
+
+.store{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 10%;
+
 }
 
-.item .img {
-  flex-shrink: 2;
+.item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 1%;
+  border-radius: 1%;
+  border: 2px solid;
+  padding: 2% 0;
+  
 }
+
+.item .img img{
+  flex-shrink: 2;
+  width: 200px;
+  height: 187px;
+}
+
+
 
 .item .btn {
   margin: 0 39%;

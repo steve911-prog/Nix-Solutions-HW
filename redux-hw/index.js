@@ -3,7 +3,8 @@ console.log("I work!")
 let budget = 199;                                                                     //Client's money
 let yours = document.getElementById("yourMoney");
 renewBucks = () => {
-  document.getElementById("yourMoney").textContent = `Your bucks: ${budget}$`;
+  document.getElementById("yourMoney").textContent = `${budget}$`;
+  console.log("renwBucks")
 };
 
 renewBucks()

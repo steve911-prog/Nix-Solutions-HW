@@ -14,11 +14,6 @@ body {
   width: 100%;
 }
 
-.container {
-  /* display: flex; */
-  /* flex-flow: column, wrap; */
-  
-}
 
 .nav {
   /* box-sizing: border-box; */
@@ -118,9 +113,10 @@ body {
 
 .store{
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    /* height: 120%; */
-    margin: 2% 15% 0 15%;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: 30% 30%; */
+
+    margin: 3% 15% 0 15%;
 
 }
 
@@ -130,7 +126,7 @@ body {
   justify-content: center;
   box-sizing: content-box;
 
-  margin: 1% -1%;
+  margin: 1% 1%;
   border-radius: 3%;
   border: 2px solid;
   padding: 2% 0;

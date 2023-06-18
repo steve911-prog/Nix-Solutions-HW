@@ -2,34 +2,26 @@
 IMAGES */
 body {
   margin: 0;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-flow: column wrap; */
+  /* justify-content: center; */
 
   /* background-color: #f0a04b; */
   font-size: 18px;
 
+  overflow-y: scroll;
   overflow-x: hidden;
   width: 100%;
 }
 
 .container {
-  display: flex;
-  flex-flow: column, nowrap;
-  justify-content: space-evenly;
-}
-
-video {
-  position: absolute;
-  width: 100vw;
-  flex-shrink: 1;
-  flex-grow: 1;
-  top: 0;
-  z-index: -10;
+  /* display: flex; */
+  /* flex-flow: column, wrap; */
+  
 }
 
 .nav {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   display: flex;
 
   align-items: center;
@@ -37,7 +29,8 @@ video {
   width: 100%;
   height: 95vh;
 
-  background-image: url("img/ocean/biggest.mp4");
+  background-image: url("img/bg.jpg");
+  background-size: 120%;
 }
 
 .nav .map {
@@ -47,6 +40,7 @@ video {
   padding-top: 1%;
   display: flex;
   flex-flow: row nowrap;
+  position: sticky;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -123,18 +117,21 @@ video {
 
 
 .store{
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    /* height: 120%; */
+    margin: 2% 15% 0 15%;
 
 }
 
 .item {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
-  margin: 1%;
-  border-radius: 1%;
+  justify-content: center;
+  box-sizing: content-box;
+
+  margin: 1% -1%;
+  border-radius: 3%;
   border: 2px solid;
   padding: 2% 0;
   
@@ -142,7 +139,7 @@ video {
 
 .item .img img{
   flex-shrink: 2;
-  width: 200px;
+  width: 100%;
   height: 187px;
 }
 

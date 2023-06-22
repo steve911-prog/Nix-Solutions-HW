@@ -13,7 +13,7 @@ function process(_data_){
     dataNamesArray = Object.keys(_data_)
     console.log(dataNamesArray)
 
-    document.querySelector("body").innerHTML = `<h3>${_data_['o']}</h3>`;
+    document.querySelector("body").innerHTML = `<h3>${dataNamesArray}</h3>`;
 
 }
 
